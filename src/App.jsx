@@ -1,17 +1,16 @@
-import Cointable from "./cointable/cointable"
-import Banner from "./Component/Banner/Banner"
-import Navbar from "./Component/Navbar/Navbar"
-
+import { useState } from "react"
+import Home from "./Pages/home"
+import { CurrencyContext } from "./context/CurrencyContext"
 
 function App() {
   
+  const [currency,setCurrency] = useState('usd')
 
   return (
     <div data-theme="coffee" className="min-h-screen bg-base-100 text-base-content p-6">
-      
-      <Navbar />
-      <Banner />
-      <Cointable />
+      <CurrencyContext.Provider value={{currency,setCurrency}}>
+        <Home />
+      </CurrencyContext.Provider>
     </div>
   )
 }
