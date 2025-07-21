@@ -1,7 +1,7 @@
 import banner from '../../assets/banner2.jpg';
 function Banner(){
   return(
-    <div className='mt-6 w-full h-[25rem] relative '>
+    <div className='mt-6 w-full h-[20rem] relative '>
         <img src={banner} alt="Logo" className='w-full h-full'/>
 
         <div className='absolute top-20 left-0 right-0 mx-auto w-[20rem]'>
