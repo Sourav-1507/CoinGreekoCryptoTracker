@@ -17,7 +17,6 @@ const CoinDetailsPage = () => {
       return <div>Is Loading...</div>
       
     }
-
     if (isError){
       return<div>Error: SomeThing went wrong</div>
     }
@@ -62,4 +61,4 @@ const CoinDetailsPage = () => {
   )
 }
 
-export default CoinDetailsPage
+export default CoinDetailsPage;

@@ -28,12 +28,12 @@ function Cointable() {
     }
   return(
     <div className="my-5 flex flex-col items-center justify-center gap-5 w-[90vw] mx-auto">
-      <div className="w-full bg-yellow-400 text-black flex py-3 px-3 font-semibold items-center      justify-center">
+      <div className="w-full bg-yellow-400 text-black flex py-3 px-3 font-semibold items-center justify-center">
           {/* header of coin table */}
           <div className="basis-[30%]">Coin</div>
           <div className="basis-[20%]">Price</div>
           <div className="basis-[25%]">24 hrs cahnge value</div>
-          <div className="basis-[20%]">Market Cap</div>
+          <div className="basis-[25%]">Market Cap</div>
       </div>
       <div className="flex flex-col w-[90vw] mx-auto">
         {data && data.map((coin) => {
@@ -58,7 +58,7 @@ function Cointable() {
                  {coin.market_cap}
                </div>
                <button 
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded w-35"
                   onClick={() => handleGoDetails (coin.id)}
                   >
                  Get Details
